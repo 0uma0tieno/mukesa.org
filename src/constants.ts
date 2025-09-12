@@ -61,8 +61,8 @@ export const EXTERNAL_LINKS_DATA: ExternalLink[] = [
     { id: '4', name: 'Engineers Board of Kenya (EBK)', url: '#', description: 'Regulatory body for engineering practice in Kenya.', icon: TrophyIcon },
 ];
 
-export const MPESA_PAYBILL = "123456";
-export const MPESA_ACCOUNT_NUMBER = "MUKESAREG";
+export const MPESA_PAYBILL = "522533";
+export const MPESA_ACCOUNT_NUMBER = "9999444";
 export const MEMBERSHIP_FEE = "KES 300";
 
 export const MOCK_MERCH_ITEMS: MerchItem[] = [
