@@ -5,7 +5,7 @@ import { useContent } from '../contexts/ContentContext';
 import { AcademicCapIcon, LightBulbIcon, UsersIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 
 const AboutPage: React.FC = () => {
-  useContent(); 
+  useContent(); // Fetch team members from context
   return (
     <SectionWrapper title="About MUKESA" subtitle="Fostering Engineering Excellence at Multimedia University of Kenya.">
       
