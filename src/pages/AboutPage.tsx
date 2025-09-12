@@ -1,14 +1,17 @@
 
 import React from 'react';
-import SectionWrapper from '../components/SectionWrapper'; // Adjusted path
+import SectionWrapper from '../components/SectionWrapper'; 
+import { useContent } from '../contexts/ContentContext';
 import { AcademicCapIcon, LightBulbIcon, UsersIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 
 const AboutPage: React.FC = () => {
+  useContent(); // Fetch team members from context
   return (
     <SectionWrapper title="About MUKESA" subtitle="Fostering Engineering Excellence at Multimedia University of Kenya.">
-      <div className="space-y-12 text-lg text-mukesa-text-muted">
-        <div className="bg-mukesa-bg-alt p-8 rounded-lg shadow-xl">
-          <h3 className="text-2xl font-semibold text-mukesa-blue mb-4 flex items-center">
+      
+      <div className="space-y-12 text-lg text-gray-700 dark:text-mukesa-gray-text">
+        <div className="bg-white dark:bg-mukesa-gray-dark p-8 rounded-lg shadow-xl">
+          <h3 className="text-2xl font-semibold text-mukesa-blue dark:text-mukesa-blue mb-4 flex items-center">
             <RocketLaunchIcon className="h-8 w-8 mr-3 text-mukesa-red" />
             Our Mission
           </h3>
@@ -17,8 +20,8 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-mukesa-bg-alt p-8 rounded-lg shadow-xl">
-          <h3 className="text-2xl font-semibold text-mukesa-blue mb-4 flex items-center">
+        <div className="bg-white dark:bg-mukesa-gray-dark p-8 rounded-lg shadow-xl">
+          <h3 className="text-2xl font-semibold text-mukesa-blue dark:text-mukesa-blue mb-4 flex items-center">
             <LightBulbIcon className="h-8 w-8 mr-3 text-mukesa-red" />
             Our Vision
           </h3>
@@ -27,8 +30,8 @@ const AboutPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-mukesa-bg-alt p-8 rounded-lg shadow-xl">
-          <h3 className="text-2xl font-semibold text-mukesa-blue mb-4">What We Do</h3>
+        <div className="bg-white dark:bg-mukesa-gray-dark p-8 rounded-lg shadow-xl">
+          <h3 className="text-2xl font-semibold text-mukesa-blue dark:text-mukesa-blue mb-4">What We Do</h3>
           <ul className="space-y-4">
             <li className="flex items-start">
               <AcademicCapIcon className="h-6 w-6 mr-3 mt-1 text-mukesa-red flex-shrink-0" />
@@ -49,9 +52,9 @@ const AboutPage: React.FC = () => {
           </ul>
         </div>
         
-        <div className="bg-mukesa-bg-alt p-8 rounded-lg shadow-xl text-center">
-            <h3 className="text-2xl font-semibold text-mukesa-blue mb-4">Join Our Community!</h3>
-            <p className="mb-6">
+        <div className="bg-white dark:bg-mukesa-gray-dark p-8 rounded-lg shadow-xl text-center">
+            <h3 className="text-2xl font-semibold text-mukesa-blue dark:text-mukesa-blue mb-4">Join Our Community!</h3>
+            <p className="mb-6 text-gray-700 dark:text-mukesa-gray-text">
                 Become a part of MUKESA and unlock a world of opportunities. Whether you're looking to learn, network, innovate, or lead, MUKESA is the place for you.
             </p>
             <a href="#/register" className="inline-block bg-mukesa-red text-white font-semibold px-8 py-3 rounded-lg hover:bg-red-700 transition-colors">
