@@ -1,14 +1,11 @@
 
 import React from 'react';
 import SectionWrapper from '../components/SectionWrapper'; 
-import { useContent } from '../contexts/ContentContext';
 import { AcademicCapIcon, LightBulbIcon, UsersIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 
 const AboutPage: React.FC = () => {
-  useContent(); // Fetch team members from context
   return (
     <SectionWrapper title="About MUKESA" subtitle="Fostering Engineering Excellence at Multimedia University of Kenya.">
-      
       <div className="space-y-12 text-lg text-gray-700 dark:text-mukesa-gray-text">
         <div className="bg-white dark:bg-mukesa-gray-dark p-8 rounded-lg shadow-xl">
           <h3 className="text-2xl font-semibold text-mukesa-blue dark:text-mukesa-blue mb-4 flex items-center">
