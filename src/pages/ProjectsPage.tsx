@@ -3,7 +3,7 @@ import React from 'react';
 import SectionWrapper from '../components/SectionWrapper'; // Adjusted path
 import { MOCK_PROJECTS } from '../constants'; // Adjusted path
 import { ProjectItem } from '../types'; // Adjusted path
-import { CodeBracketIcon, UsersIcon, DocumentTextIcon, ArrowTopRightOnSquareIcon, LightBulbIcon } from '@heroicons/react/24/outline';
+import { CodeBracketIcon, UsersIcon, DocumentTextIcon, LightBulbIcon } from '@heroicons/react/24/outline';
 import Button from '../components/Button'; // Adjusted path
 
 const ProjectCard: React.FC<{ project: ProjectItem }> = ({ project }) => {
