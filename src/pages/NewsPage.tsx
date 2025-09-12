@@ -59,7 +59,7 @@ const NewsPage: React.FC = () => {
         </div>
       ) : (
         <p className="text-center text-xl text-gray-600 dark:text-mukesa-gray-text py-10">
-          No news articles to display at the moment. Check back soon for the latest updates!
+          No nws articles to display at the moment. Check back soon for the latest updates!
         </p>
       )}
       <div className="mt-12 text-center">
