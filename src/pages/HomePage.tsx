@@ -52,7 +52,7 @@ const MiniCard: React.FC<{item: EventItem | NewsArticle | ProjectItem, type: 'ev
 
 const HomePage: React.FC = () => {
   const featuredEvents = MOCK_EVENTS.filter(e => e.type === 'Upcoming').slice(0, 2);
-  const latestNews = MOCK_NEWS.slice(0, 2);
+  /* const latestNews = MOCK_NEWS.slice(0, 2); */
   const featuredProject = MOCK_PROJECTS.slice(0,1)[0];
 
   return (
@@ -92,7 +92,7 @@ const HomePage: React.FC = () => {
         </SectionWrapper>
       )}
 
-      {latestNews.length > 0 && (
+      {/* {latestNews.length > 0 && (
          <SectionWrapper title="Latest News & Trends" subtitle="Stay updated with the latest in the world of engineering.">
          <div className="grid md:grid-cols-2 gap-8">
            {latestNews.map(news => <MiniCard key={news.id} item={news} type="news" />)}
@@ -103,7 +103,7 @@ const HomePage: React.FC = () => {
            </Button>
          </div>
        </SectionWrapper>
-      )}
+      )} */}
 
       {featuredProject && (
         <SectionWrapper title="Featured Project" subtitle="Check out innovative work from our talented students.">

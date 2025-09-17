@@ -7,7 +7,7 @@ export const NAVIGATION_LINKS: NavLinkItem[] = [
   { name: 'Events', path: '/events' },
   { name: 'Achievements', path: '/achievements' },
   { name: 'Projects & Papers', path: '/projects' },
-  { name: 'News & Trends', path: '/news' },
+  //{ name: 'News & Trends', path: '/news' },
   { name: 'Our Team', path: '/team' },
   { name: 'Merch', path: '/merch' }, 
   { name: 'Join Us', path: '/register' },

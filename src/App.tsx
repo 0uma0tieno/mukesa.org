@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import EventsPage from './pages/EventsPage';
 import AchievementsPage from './pages/AchievementsPage';
-import NewsPage from './pages/NewsPage';
+//import NewsPage from './pages/NewsPage';
 import ProjectsPage from './pages/ProjectsPage';
 import TeamPage from './pages/TeamPage';
 import RegisterPage from './pages/RegisterPage';
@@ -36,7 +36,7 @@ const App: React.FC = () => {
           <Route path="events" element={<EventsPage />} />
           <Route path="achievements" element={<AchievementsPage />} />
           <Route path="merch" element={<MerchPage />} />
-          <Route path="news" element={<NewsPage />} />
+          {/* <Route path="news" element={<NewsPage />} /> */}
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="team" element={<TeamPage />} />
           <Route path="register" element={<RegisterPage />} />
