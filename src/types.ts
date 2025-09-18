@@ -23,6 +23,7 @@ export interface AgendaItem {
 }
 
 export interface EventItem {
+  detailsLink: any;
   id: string;
   title: string;
   date: string;
