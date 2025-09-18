@@ -10,14 +10,30 @@ export enum EventType {
   ONGOING = 'Ongoing',
 }
 
+export interface Speaker {
+  name: string;
+  title: string;
+  imageUrl?: string;
+}
+
+export interface AgendaItem {
+  time: string;
+  topic: string;
+  speaker?: string;
+}
+
 export interface EventItem {
   id: string;
   title: string;
   date: string;
+  time?: string;
+  location?: string;
   description: string;
   imageUrl?: string;
   type: EventType;
-  detailsLink?: string;
+  speakers?: Speaker[];
+  agenda?: AgendaItem[];
+  registrationLink?: string;
 }
 
 export interface ProjectItem {

@@ -16,11 +16,100 @@ export const NAVIGATION_LINKS: NavLinkItem[] = [
 ];
 
 export const MOCK_EVENTS: EventItem[] = [
-  { id: '1', title: 'CivExpo 2025', date: '2025-10-15', description: 'An event to link Civil engineering students to industry experts.', imageUrl: '/images/civ expo.png', type: EventType.UPCOMING, detailsLink: '#' },
-  { id: '2', title: 'MUKESA Annual Dinner 2025', date: '2025-11-05', description: 'Wrapping up the year in style.', imageUrl: '/images/dinner.png', type: EventType.UPCOMING, detailsLink: '#' },
-  { id: '3', title: 'MMU Innovation Week 2025', date: '2025-03-17', description: 'A showcase of student innovations and talks from industry leaders..', imageUrl: '/images/TECHNOVATION WEEK.png', type: EventType.PAST, detailsLink: '#' },
-  { id: '4', title: 'MUKESA Football Tournament 2025', date: '2025-02-17', description: 'Breaking class monotony through football and fun games.', imageUrl: '/images/MUKESA FOOTBALL TOURNAMENT.png', type: EventType.PAST, detailsLink: '#' },
-  { id: '5', title: 'Ongoing: ThinkTank by The Lads', date: 'Ongoing', description: 'Up-skilling students over a refreshing cup of coffee.', imageUrl: '/images/thinktank dp.png', type: EventType.ONGOING, detailsLink: '#' },
+  { 
+    id: '1', 
+    title: 'CivExpo 2025', 
+    date: '2025-10-15', 
+    time: '09:00 AM - 05:00 PM', 
+    location: 'MMU Main Campus', 
+    description: 'An event to link Civil engineering students to industry experts.', 
+    imageUrl: '/images/civ expo.png', 
+    type: EventType.UPCOMING, 
+    speakers: [
+      { name: 'Jane Doe', title: 'Senior Civil Engineer at BuildIt Ltd.', imageUrl: '/images/jane.png' },
+      { name: 'John Smith', title: 'Project Manager at InfraWorks', imageUrl: '/images/john.png' }
+    ],
+    agenda: [
+      { time: '09:00 AM', topic: 'Registration & Welcome Address' },
+      { time: '10:00 AM', topic: 'Keynote Speech by Jane Doe', speaker: 'Jane Doe' },
+      { time: '11:00 AM', topic: 'Panel Discussion: Future of Civil Engineering', speaker: 'John Smith' },
+    ],
+    registrationLink: '#',
+   
+  },
+  { 
+    id: '2', 
+    title: 'MUKESA Annual Dinner 2025', 
+    date: '2025-11-05', 
+    time: '07:00 PM - 11:00 PM', 
+    location: 'MMU Dining Hall', 
+    description: 'Wrapping up the year in style.', 
+    imageUrl: '/images/dinner.png', 
+    type: EventType.UPCOMING, 
+    speakers: [
+      { name: 'Alice Johnson', title: 'Event Host and MC', imageUrl: '/images/alice.png' },
+    ],
+    agenda: [
+      { time: '07:00 PM', topic: 'Welcome Drinks' },
+      { time: '08:00 PM', topic: 'Dinner Service' },
+    ],
+    registrationLink: '#',
+  },
+  { 
+    id: '3', 
+    title: 'MMU Innovation Week 2025', 
+    date: '2025-03-17', 
+    time: 'All Day', 
+    location: 'MMU Campus', 
+    description: 'A showcase of student innovations and talks from industry leaders..', 
+    imageUrl: '/images/TECHNOVATION WEEK.png', 
+    type: EventType.PAST, 
+    speakers: [
+      { name: 'Dr. Emily Carter', title: 'Expert in Educational Technology', imageUrl: '/images/emily.png' },
+      { name: 'Prof. Alan Turing', title: 'Pioneer in Computer Science', imageUrl: '/images/alan.png' }
+    ],
+    agenda: [
+      { time: '09:00 AM', topic: 'Opening Ceremony' },
+      { time: '10:00 AM', topic: 'Panel Discussion: The Future of Tech' },
+    ],
+    registrationLink: '#',
+  },
+  { 
+    id: '4', 
+    title: 'MUKESA Football Tournament 2025', 
+    date: '2025-02-17', 
+    time: '10:00 AM - 04:00 PM', 
+    location: 'MMU Sports Field', 
+    description: 'Breaking class monotony through football and fun games.', 
+    imageUrl: '/images/MUKESA FOOTBALL TOURNAMENT.png', 
+    type: EventType.PAST, 
+    speakers: [
+      { name: 'Coach Mike', title: 'Local Football Coach and Trainer', imageUrl: '/images/coach_mike.png' },
+    ],
+    agenda: [
+      { time: '10:00 AM', topic: 'Match Kick-off' },
+      { time: '12:00 PM', topic: 'Halftime Break' },
+    ],
+    registrationLink: '#',
+  },
+  { 
+    id: '5', 
+    title: 'Ongoing: ThinkTank by The Lads', 
+    date: 'Ongoing', 
+    time: 'Every Saturday', 
+    location: 'MMU Cafeteria', 
+    description: 'Up-skilling students over a refreshing cup of coffee.', 
+    imageUrl: '/images/thinktank dp.png', 
+    type: EventType.ONGOING, 
+    speakers: [
+      { name: 'Various Industry Experts', title: 'Guest speakers from various tech industries.', imageUrl: '/images/guest_speaker.png' },
+    ],
+    agenda: [
+      { time: '10:00 AM', topic: 'Networking & Coffee' },
+      { time: '11:00 AM', topic: 'Skill Development Session' },
+    ],
+    registrationLink: '#',
+  },
 ];
 
 export const MOCK_PROJECTS: ProjectItem[] = [
