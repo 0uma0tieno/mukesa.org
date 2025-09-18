@@ -24,6 +24,7 @@ export const MOCK_EVENTS: EventItem[] = [
     location: 'MMU Main Campus',
     description: 'An event to link Civil engineering students to industry experts.',
     imageUrl: '/images/civ expo.png',
+    bannerImageUrl: '/images/civ expo banner.png',
     type: EventType.UPCOMING,
     speakers: [
       { name: 'Jane Doe', title: 'Senior Civil Engineer at BuildIt Ltd.', imageUrl: '/images/jane.png' },
@@ -34,8 +35,8 @@ export const MOCK_EVENTS: EventItem[] = [
       { time: '10:00 AM', topic: 'Keynote Speech by Jane Doe', speaker: 'Jane Doe' },
       { time: '11:00 AM', topic: 'Panel Discussion: Future of Civil Engineering', speaker: 'John Smith' },
     ],
-    registrationLink: '#',
-    detailsLink: undefined
+    registrationLink: '#'
+  
   },
   {
     id: '2',
@@ -45,6 +46,7 @@ export const MOCK_EVENTS: EventItem[] = [
     location: 'MMU Dining Hall',
     description: 'Wrapping up the year in style.',
     imageUrl: '/images/dinner.png',
+    bannerImageUrl: '/images/dinner banner.png',
     type: EventType.UPCOMING,
     speakers: [
       { name: 'Alice Johnson', title: 'Event Host and MC', imageUrl: '/images/alice.png' },
@@ -53,8 +55,7 @@ export const MOCK_EVENTS: EventItem[] = [
       { time: '07:00 PM', topic: 'Welcome Drinks' },
       { time: '08:00 PM', topic: 'Dinner Service' },
     ],
-    registrationLink: '#',
-    detailsLink: undefined
+    registrationLink: '#'
   },
   {
     id: '3',
@@ -64,6 +65,7 @@ export const MOCK_EVENTS: EventItem[] = [
     location: 'MMU Campus',
     description: 'A showcase of student innovations and talks from industry leaders..',
     imageUrl: '/images/TECHNOVATION WEEK.png',
+    bannerImageUrl: '/images/innovation week banner.png',
     type: EventType.PAST,
     speakers: [
       { name: 'Dr. Emily Carter', title: 'Expert in Educational Technology', imageUrl: '/images/emily.png' },
@@ -73,8 +75,7 @@ export const MOCK_EVENTS: EventItem[] = [
       { time: '09:00 AM', topic: 'Opening Ceremony' },
       { time: '10:00 AM', topic: 'Panel Discussion: The Future of Tech' },
     ],
-    registrationLink: '#',
-    detailsLink: undefined
+    registrationLink: '#'
   },
   {
     id: '4',
@@ -84,6 +85,7 @@ export const MOCK_EVENTS: EventItem[] = [
     location: 'MMU Sports Field',
     description: 'Breaking class monotony through football and fun games.',
     imageUrl: '/images/MUKESA FOOTBALL TOURNAMENT.png',
+    bannerImageUrl: '/images/football tournament banner.png',
     type: EventType.PAST,
     speakers: [
       { name: 'Coach Mike', title: 'Local Football Coach and Trainer', imageUrl: '/images/coach_mike.png' },
@@ -92,8 +94,7 @@ export const MOCK_EVENTS: EventItem[] = [
       { time: '10:00 AM', topic: 'Match Kick-off' },
       { time: '12:00 PM', topic: 'Halftime Break' },
     ],
-    registrationLink: '#',
-    detailsLink: undefined
+    registrationLink: '#'
   },
   {
     id: '5',
@@ -103,6 +104,7 @@ export const MOCK_EVENTS: EventItem[] = [
     location: 'MMU Cafeteria',
     description: 'Up-skilling students over a refreshing cup of coffee.',
     imageUrl: '/images/thinktank dp.png',
+    bannerImageUrl: '/images/thinktank banner.png',
     type: EventType.ONGOING,
     speakers: [
       { name: 'Various Industry Experts', title: 'Guest speakers from various tech industries.', imageUrl: '/images/guest_speaker.png' },
@@ -111,8 +113,7 @@ export const MOCK_EVENTS: EventItem[] = [
       { time: '10:00 AM', topic: 'Networking & Coffee' },
       { time: '11:00 AM', topic: 'Skill Development Session' },
     ],
-    registrationLink: '#',
-    detailsLink: undefined
+    registrationLink: '#'
   },
 ];
 

@@ -23,14 +23,14 @@ export interface AgendaItem {
 }
 
 export interface EventItem {
-  detailsLink: any;
   id: string;
   title: string;
   date: string;
   time?: string;
   location?: string;
   description: string;
-  imageUrl?: string;
+  imageUrl?: string; // For event cards
+  bannerImageUrl?: string; // For event details page header
   type: EventType;
   speakers?: Speaker[];
   agenda?: AgendaItem[];
