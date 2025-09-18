@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import EventsPage from './pages/EventsPage';
+import EventDetailsPage from "./pages/EventDetailsPage";
 import AchievementsPage from './pages/AchievementsPage';
 //import NewsPage from './pages/NewsPage';
 import ProjectsPage from './pages/ProjectsPage';
@@ -34,6 +35,7 @@ const App: React.FC = () => {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="events" element={<EventsPage />} />
+          <Route path="events/:eventId" element={<EventDetailsPage />} />
           <Route path="achievements" element={<AchievementsPage />} />
           <Route path="merch" element={<MerchPage />} />
           {/* <Route path="news" element={<NewsPage />} /> */}

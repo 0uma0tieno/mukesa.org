@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useContent } from '../contexts/ContentContext';
 import SectionWrapper from '../components/SectionWrapper';
 import { EventItem } from '../types';
-import { CalendarDaysIcon, ArrowLeftIcon, MapPinIcon, ClockIcon, TicketIcon } from '@heroicons/react/24/outline';
+import { CalendarDaysIcon, ArrowLeftIcon, MapPinIcon, ClockIcon, TicketIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 import Button from '../components/Button';
 
 const EventDetailsPage: React.FC = () => {
@@ -17,13 +16,16 @@ const EventDetailsPage: React.FC = () => {
   if (!event) {
     return (
         <SectionWrapper title="Event Not Found">
-            <div className="text-center">
+            <div className="text-center py-10">
+                <ExclamationTriangleIcon className="h-20 w-20 text-mukesa-red mx-auto mb-6" />
                 <p className="text-xl text-gray-600 dark:text-mukesa-gray-text mb-8">
-                    Sorry, we couldn't find the event you're looking for.
+                    Sorry, we couldn't find an event with that ID. It might have been moved or removed.
                 </p>
-                <Link to="/events" className="inline-flex items-center text-mukesa-red hover:underline font-semibold">
-                    <ArrowLeftIcon className="h-5 w-5 mr-2" />
-                    Back to All Events
+                <Link to="/events">
+                    <Button variant="primary">
+                        <ArrowLeftIcon className="h-5 w-5 mr-2 inline" />
+                        Back to All Events
+                    </Button>
                 </Link>
             </div>
         </SectionWrapper>
