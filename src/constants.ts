@@ -158,6 +158,9 @@ export const EXTERNAL_LINKS_DATA: ExternalLink[] = [
 export const MPESA_PAYBILL = "522533";
 export const MPESA_ACCOUNT_NUMBER = "9999444";
 export const MEMBERSHIP_FEE = "KES 300";
+export const MERCH_CONTACT_EMAIL = "mukesa1819@gmail.com";
+export const REGISTRATION_CONTACT_EMAIL = "mukesa1819@gmail.com";
+
 
 export const MOCK_MERCH_ITEMS: MerchItem[] = [
   { id: 'm1', name: 'MUKESA Logo T-Shirt', description: 'Comfortable cotton T-Shirt with the official MUKESA logo. Available in S, M, L, XL.', price: 'KES 1200', imageUrl: '/images/shirt.png', category: 'Apparel' },
