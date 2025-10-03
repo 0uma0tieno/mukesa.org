@@ -17,26 +17,41 @@ export const NAVIGATION_LINKS: NavLinkItem[] = [
 
 export const MOCK_EVENTS: EventItem[] = [
   {
-    id: '1',
-    title: 'CivExpo 2025',
-    date: '2025-10-15',
-    time: '09:00 AM - 05:00 PM',
-    location: 'MMU Main Campus',
-    description: 'An event to link Civil engineering students to industry experts.',
-    imageUrl: '/images/civ expo.png',
-    bannerImageUrl: '/images/civ expo banner.png',
+    id: '6',
+    title: 'CiVEXPO 2025',
+    date: '2025-10-03',
+    time: '8:30 AM - 4:20 PM onwards',
+    location: 'Multimedia University of Kenya Conference Hall',
+    description: 'A premier event for civil engineering students, featuring technical talks, keynote speeches from industry leaders, project presentations, and a panel discussion on the future of engineering. Connect with professionals, learn about emerging trends, and explore career pathways.',
+    imageUrl: 'public/images/CIVEXPO3.png',
+    bannerImageUrl: 'public/images/Screenshot 2025-10-02 192557.png',
     type: EventType.UPCOMING,
     speakers: [
-      { name: 'Jane Doe', title: 'Senior Civil Engineer at BuildIt Ltd.', imageUrl: '/images/jane.png' },
-      { name: 'John Smith', title: 'Project Manager at InfraWorks', imageUrl: '/images/john.png' }
+      { name: 'Salim Mohamed', title: 'Alumni UON', imageUrl: 'https://picsum.photos/seed/speaker4/100/100' },
+      { name: 'Eng. Jennifer Jelagat', title: 'KURA', imageUrl: 'https://picsum.photos/seed/speaker5/100/100' },
+      { name: 'QS Fidelis Maiba', title: 'CEO, Batir Constructions LTD', imageUrl: 'public/images/WhatsApp Image 2025-10-02 at 10.35.35_fb58f2e8.jpg' },
+      { name: 'DR. Elisha Akech Ochungo', title: 'G&A Consultants', imageUrl: 'public/images/Dr Elisha Aketch Ochungo.png' },
+      { name: 'DR. Martin Wafula', title: 'DPhil Candidate Oxford University', imageUrl: 'public/images/Dr Wachoye Martin Wafula.png' },
+      { name: 'Ms. Mary Abungu', title: 'TIMCON Associates LTD', imageUrl: 'https://picsum.photos/seed/speaker9/100/100' },
     ],
     agenda: [
-      { time: '09:00 AM', topic: 'Registration & Welcome Address' },
-      { time: '10:00 AM', topic: 'Keynote Speech by Jane Doe', speaker: 'Jane Doe' },
-      { time: '11:00 AM', topic: 'Panel Discussion: Future of Civil Engineering', speaker: 'John Smith' },
+      { time: '8:30 AM - 9:00 AM', topic: 'Arrival & Registration' },
+      { time: '9:00 AM - 9:30 AM', topic: 'Opening Ceremony', speaker: 'Organizing Committee, Faculty Rep, DVC Academics' },
+      { time: '9:30 AM - 10:00 AM', topic: 'Technical Talk: Sustainable Engineering - Fibreglasses', speaker: 'Salim Mohamed' },
+      { time: '10:00 AM - 10:30 AM', topic: 'Keynote: Career Pathways for Young Engineers', speaker: 'Eng. Jennifer Jelagat & Eng. Doreen' },
+      { time: '10:30 AM - 11:00 AM', topic: 'IEK Future Leaders Session - Technical Talks', speaker: 'Diana Rose & Sammy Arisa' },
+      { time: '11:00 AM - 11:30 AM', topic: 'ACEK Future Leaders Session' },
+      { time: '11:30 AM - 12:00 PM', topic: 'Technical Talk: Materials of Tomorrow', speaker: 'QS Fidelis Maiba' },
+      { time: '12:00 PM - 12:30 PM', topic: 'TIMCON Associates LTD Session', speaker: 'Ms. Mary Abungu' },
+      { time: '12:30 PM - 1:00 PM', topic: 'Keynote: Entrepreneurship in Engineering & Mentorship', speaker: 'DR. Elisha Akech Ochungo' },
+      { time: '1:00 PM - 2:00 PM', topic: 'Lunch Break' },
+      { time: '2:00 PM - 2:30 PM', topic: 'Opportunities in Student Led Associations (Presentations)', speaker: 'ACES KU, CSA TUK, ACES UON' },
+      { time: '2:30 PM - 3:00 PM', topic: 'Projects Presentation' },
+      { time: '3:00 PM - 4:00 PM', topic: 'Panel Discussion: The Future Engineer – Skills, Innovation, and Adaptability' },
+      { time: '4:00 PM - 4:20 PM', topic: 'Awards & Recognition Ceremony' },
+      { time: '4:20 PM Onwards', topic: 'Closing Ceremony & Photo Session' },
     ],
-    registrationLink: '#'
-  
+    registrationLink: 'https://luma.com/b623wq9s'
   },
   {
     id: '2',
