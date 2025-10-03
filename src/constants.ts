@@ -23,7 +23,7 @@ export const MOCK_EVENTS: EventItem[] = [
     time: '8:30 AM - 4:20 PM onwards',
     location: 'Multimedia University of Kenya Conference Hall',
     description: 'A premier event for civil engineering students, featuring technical talks, keynote speeches from industry leaders, project presentations, and a panel discussion on the future of engineering. Connect with professionals, learn about emerging trends, and explore career pathways.',
-    imageUrl: '/images/CIVEXPO3.png',
+    imageUrl: '/images/Screenshot 2025-10-02 192557.png',
     bannerImageUrl: '/images/Screenshot 2025-10-02 192557.png',
     type: EventType.UPCOMING,
     speakers: [

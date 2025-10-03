@@ -43,8 +43,12 @@ const EventDetailsPage: React.FC = () => {
         </div>
 
         <div className="bg-white dark:bg-mukesa-gray-dark p-6 sm:p-8 rounded-xl shadow-2xl">
-          {event.imageUrl && (
-            <img src={event.imageUrl} alt={event.title} className="w-full h-64 md:h-96 object-cover rounded-lg mb-8 bg-gray-200 dark:bg-mukesa-black" />
+          {(event.bannerImageUrl || event.imageUrl) && (
+            <img 
+              src={event.bannerImageUrl || event.imageUrl} 
+              alt={`${event.title} banner`} 
+              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8 bg-gray-200 dark:bg-mukesa-black" 
+            />
           )}
           <h1 className="text-3xl md:text-5xl font-bold text-mukesa-blue dark:text-white mb-6">{event.title}</h1>
           
@@ -112,8 +116,14 @@ const EventDetailsPage: React.FC = () => {
                   <li key={item.time} className="flex flex-col sm:flex-row p-4 bg-gray-50 dark:bg-mukesa-black rounded-lg shadow-sm">
                     <div className="font-bold text-mukesa-blue w-full sm:w-40 mb-2 sm:mb-0 flex-shrink-0">{item.time}</div>
                     <div className="flex-grow">
-                      <p className="font-semibold text-gray-800 dark:text-white">{item.topic}</p>
-                      {item.speaker && <p className="text-sm text-gray-600 dark:text-mukesa-gray-text">with {item.speaker}</p>}
+                      <p className="font-semibold text-gray-800 dark:text-white">
+                        {item.topic}
+                        {item.speaker && (
+                          <span className="block text-sm font-normal text-gray-600 dark:text-mukesa-gray-text">
+                            with {item.speaker}
+                          </span>
+                        )}
+                      </p>
                     </div>
                   </li>
                 ))}
