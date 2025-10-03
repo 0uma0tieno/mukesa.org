@@ -16,6 +16,19 @@ export const NAVIGATION_LINKS: NavLinkItem[] = [
 ];
 
 export const MOCK_EVENTS: EventItem[] = [
+
+{
+    id: '7',
+    title: 'MUKESA - IEEE Picnic',
+    date: '2025-10-18',
+    location: 'Ololua Nature Trail',
+    description: 'Join us for a fun and relaxing picnic co-hosted by MUKESA and the IEEE MMU Student Branch at the beautiful Ololua Nature Trail. A great opportunity to network, socialize, and enjoy nature. The contribution is KES 399 per person.',
+    imageUrl: 'https://picsum.photos/seed/event7/600/400',
+    bannerImageUrl: 'https://picsum.photos/seed/event7banner/1200/400',
+    type: EventType.UPCOMING,
+    registrationLink: '#'
+  },
+
   {
     id: '6',
     title: 'CiVEXPO 2025',
@@ -51,6 +64,19 @@ export const MOCK_EVENTS: EventItem[] = [
       { time: '4:00 PM - 4:20 PM', topic: 'Awards & Recognition Ceremony' },
       { time: '4:20 PM Onwards', topic: 'Closing Ceremony & Photo Session' },
     ],
+
+sponsors: [
+      { name: 'Kenya Urban Roads Authority (KURA)', logoUrl: '/images/KURA.png' },
+      { name: 'Institution of Engineers of Kenya (IEK)', logoUrl: '/images/IEK.png' },
+      { name: 'IEK-FL', logoUrl: '/images/IEK FL.png' },
+      { name: 'ACEK FL', logoUrl: '/images/ACEK FL.png' },
+      { name: 'ACES KU', logoUrl: '/images/ACES KU.png' },
+      { name: 'CSA TUK', logoUrl: '/images/CSA.png' },
+      { name: 'ACES UON', logoUrl: '/images/ACES UON.jpg' },
+      { name: 'The Lads', logoUrl: '/images/The Lads.png' },
+      { name: 'Innovate-Her', logoUrl: '/images/Innovate-Her.png' },
+    ],
+
     registrationLink: 'https://luma.com/b623wq9s'
   },
   {

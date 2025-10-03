@@ -24,6 +24,11 @@ export interface AgendaItem {
   speaker?: string;
 }
 
+export interface Sponsor {
+  name: string;
+  logoUrl: string; // URL to the sponsor's logo
+}
+
 export interface EventItem {
   id: string;
   title: string;
@@ -36,6 +41,7 @@ export interface EventItem {
   type: EventType;
   speakers?: Speaker[];
   agenda?: AgendaItem[];
+  sponsors?: Sponsor[];
   registrationLink?: string;
 }
 
