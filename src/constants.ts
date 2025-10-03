@@ -55,41 +55,27 @@ export const MOCK_EVENTS: EventItem[] = [
   },
   {
     id: '2',
-    title: 'MUKESA Annual Dinner 2025',
-    date: '2025-11-05',
-    time: '07:00 PM - 11:00 PM',
-    location: 'MMU Dining Hall',
+    title: '8th Engineers Dinner',
+    date: 'TBC',
+    time: 'TBC',
+    location: 'TBC',
     description: 'Wrapping up the year in style.',
     imageUrl: '/images/dinner.png',
     bannerImageUrl: '/images/dinner banner.png',
     type: EventType.UPCOMING,
-    speakers: [
-      { name: 'Alice Johnson', title: 'Event Host and MC', imageUrl: '/images/alice.png' },
-    ],
-    agenda: [
-      { time: '07:00 PM', topic: 'Welcome Drinks' },
-      { time: '08:00 PM', topic: 'Dinner Service' },
-    ],
-    registrationLink: '#'
+   
   },
   {
     id: '3',
     title: 'MMU Innovation Week 2025',
     date: '2025-03-17',
     time: 'All Day',
-    location: 'MMU Campus',
+    location: 'MMU, Pavillion B',
     description: 'A showcase of student innovations and talks from industry leaders..',
     imageUrl: '/images/TECHNOVATION WEEK.png',
     bannerImageUrl: '/images/innovation week banner.png',
     type: EventType.PAST,
-    speakers: [
-      { name: 'Dr. Emily Carter', title: 'Expert in Educational Technology', imageUrl: '/images/emily.png' },
-      { name: 'Prof. Alan Turing', title: 'Pioneer in Computer Science', imageUrl: '/images/alan.png' }
-    ],
-    agenda: [
-      { time: '09:00 AM', topic: 'Opening Ceremony' },
-      { time: '10:00 AM', topic: 'Panel Discussion: The Future of Tech' },
-    ],
+  
     registrationLink: '#'
   },
   {
@@ -97,37 +83,28 @@ export const MOCK_EVENTS: EventItem[] = [
     title: 'MUKESA Football Tournament 2025',
     date: '2025-02-17',
     time: '10:00 AM - 04:00 PM',
-    location: 'MMU Sports Field',
+    location: 'MMU Stadium',
     description: 'Breaking class monotony through football and fun games.',
     imageUrl: '/images/MUKESA FOOTBALL TOURNAMENT.png',
     bannerImageUrl: '/images/football tournament banner.png',
     type: EventType.PAST,
-    speakers: [
-      { name: 'Coach Mike', title: 'Local Football Coach and Trainer', imageUrl: '/images/coach_mike.png' },
-    ],
-    agenda: [
-      { time: '10:00 AM', topic: 'Match Kick-off' },
-      { time: '12:00 PM', topic: 'Halftime Break' },
-    ],
+    
+      
+  
     registrationLink: '#'
   },
   {
     id: '5',
     title: 'Ongoing: ThinkTank by The Lads',
     date: 'Ongoing',
-    time: 'Every Saturday',
-    location: 'MMU Cafeteria',
+    time: 'Every Tuesday',
+    location: 'Lecture Room 3',
     description: 'Up-skilling students over a refreshing cup of coffee.',
     imageUrl: '/images/thinktank dp.png',
     bannerImageUrl: '/images/thinktank banner.png',
     type: EventType.ONGOING,
-    speakers: [
-      { name: 'Various Industry Experts', title: 'Guest speakers from various tech industries.', imageUrl: '/images/guest_speaker.png' },
-    ],
-    agenda: [
-      { time: '10:00 AM', topic: 'Networking & Coffee' },
-      { time: '11:00 AM', topic: 'Skill Development Session' },
-    ],
+      
+   
     registrationLink: '#'
   },
 ];
