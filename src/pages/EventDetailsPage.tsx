@@ -133,7 +133,7 @@ const EventDetailsPage: React.FC = () => {
 
           {event.sponsors && event.sponsors.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold text-mukesa-blue dark:text-white mt-10 mb-4 border-b-2 border-mukesa-red pb-2">Our Sponsors & Partners</h2>
+              <h2 className="text-2xl font-bold text-mukesa-blue dark:text-black mt-10 mb-4 border-b-2 border-mukesa-red pb-2">Our Sponsors & Partners</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                 {event.sponsors.map(sponsor => (
                   <div key={sponsor.name} className="bg-gray-50 dark:bg-mukesa-black p-4 rounded-lg shadow-md flex items-center justify-center transition-transform duration-300 hover:scale-105">

@@ -26,6 +26,10 @@ export const MOCK_EVENTS: EventItem[] = [
     imageUrl: 'https://picsum.photos/seed/event7/600/400',
     bannerImageUrl: 'https://picsum.photos/seed/event7banner/1200/400',
     type: EventType.UPCOMING,
+    sponsors: [
+      { name: 'IEEE MMU Student Branch', logoUrl: '/images/MMUK SB LOGO NL.png' },
+      { name: 'MUKESA', logoUrl: '/images/MUKESA_LOGO.png' }
+    ],
     registrationLink: '#'
   },
 
@@ -101,7 +105,10 @@ sponsors: [
     imageUrl: '/images/TECHNOVATION WEEK.png',
     bannerImageUrl: '/images/innovation week banner.png',
     type: EventType.PAST,
-  
+  sponsors: [
+      { name: 'IEEE MMU Student Branch', logoUrl: '/images/MMUK SB LOGO NL.png' },
+      { name: 'MUKESA', logoUrl: '/images/MUKESA_LOGO.png' }
+    ],
     registrationLink: '#'
   },
   {
@@ -114,9 +121,12 @@ sponsors: [
     imageUrl: '/images/MUKESA FOOTBALL TOURNAMENT.png',
     bannerImageUrl: '/images/football tournament banner.png',
     type: EventType.PAST,
-    
-      
-  
+
+    sponsors: [
+      { name: 'IEEE MMU Student Branch', logoUrl: '/images/MMUK SB LOGO NL.png' },
+      { name: 'MUKESA', logoUrl: '/images/MUKESA_LOGO.png' }
+    ],
+
     registrationLink: '#'
   },
   {
@@ -129,8 +139,12 @@ sponsors: [
     imageUrl: '/images/thinktank dp.png',
     bannerImageUrl: '/images/thinktank banner.png',
     type: EventType.ONGOING,
-      
-   
+
+    sponsors: [
+      { name: 'IEEE MMU Student Branch', logoUrl: '/images/MMUK SB LOGO NL.png' },
+      { name: 'MUKESA', logoUrl: '/images/MUKESA_LOGO.png' }
+    ],
+
     registrationLink: '#'
   },
 ];
