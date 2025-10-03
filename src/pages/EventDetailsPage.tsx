@@ -50,13 +50,13 @@ const EventDetailsPage: React.FC = () => {
               className="w-full h-64 md:h-96 object-cover rounded-lg mb-8 bg-gray-200 dark:bg-mukesa-black" 
             />
           )}
-          <h1 className="text-3xl md:text-5xl font-bold text-mukesa-blue dark:text-white mb-6">{event.title}</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-mukesa-blue dark:text-black mb-6">{event.title}</h1>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8 text-gray-700 dark:text-mukesa-gray-text border-t border-b border-gray-200 dark:border-mukesa-black py-6">
             <div className="flex items-center">
               <CalendarDaysIcon className="h-8 w-8 mr-3 text-mukesa-red flex-shrink-0" /> 
               <div>
-                <strong className="block text-gray-800 dark:text-white">Date</strong>
+                <strong className="block text-gray-800 dark:text-black">Date</strong>
                 {event.date}
               </div>
             </div>
@@ -64,7 +64,7 @@ const EventDetailsPage: React.FC = () => {
               <div className="flex items-center">
                 <ClockIcon className="h-8 w-8 mr-3 text-mukesa-red flex-shrink-0" /> 
                 <div>
-                  <strong className="block text-gray-800 dark:text-white">Time</strong>
+                  <strong className="block text-gray-800 dark:text-black">Time</strong>
                   {event.time}
                 </div>
               </div>
@@ -73,7 +73,7 @@ const EventDetailsPage: React.FC = () => {
               <div className="flex items-center">
                 <MapPinIcon className="h-8 w-8 mr-3 text-mukesa-red flex-shrink-0" /> 
                 <div>
-                  <strong className="block text-gray-800 dark:text-white">Location</strong>
+                  <strong className="block text-gray-800 dark:text-black">Location</strong>
                   {event.location}
                 </div>
               </div>
@@ -88,19 +88,19 @@ const EventDetailsPage: React.FC = () => {
             </div>
           )}
           
-          <h2 className="text-2xl font-bold text-mukesa-blue dark:text-white mt-8 mb-4 border-b-2 border-mukesa-red pb-2">About the Event</h2>
+          <h2 className="text-2xl font-bold text-mukesa-blue dark:text-black mt-8 mb-4 border-b-2 border-mukesa-red pb-2">About the Event</h2>
           <p className="text-lg text-gray-700 dark:text-mukesa-gray-text leading-relaxed whitespace-pre-wrap">
             {event.description}
           </p>
 
           {event.speakers && event.speakers.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold text-mukesa-blue dark:text-white mt-10 mb-4 border-b-2 border-mukesa-red pb-2">Speakers</h2>
+              <h2 className="text-2xl font-bold text-mukesa-blue dark:text-black mt-10 mb-4 border-b-2 border-mukesa-red pb-2">Speakers</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {event.speakers.map(speaker => (
                   <div key={speaker.name} className="text-center bg-gray-50 dark:bg-mukesa-black p-4 rounded-lg shadow-md">
                     <img src={speaker.imageUrl || `https://i.pravatar.cc/150?u=${speaker.name}`} alt={speaker.name} className="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-mukesa-blue" />
-                    <h3 className="font-semibold text-lg text-gray-800 dark:text-white">{speaker.name}</h3>
+                    <h3 className="font-semibold text-lg text-gray-800 dark:text-black">{speaker.name}</h3>
                     <p className="text-sm text-mukesa-red">{speaker.title}</p>
                   </div>
                 ))}
@@ -110,16 +110,16 @@ const EventDetailsPage: React.FC = () => {
 
           {event.agenda && event.agenda.length > 0 && (
             <>
-              <h2 className="text-2xl font-bold text-mukesa-blue dark:text-white mt-10 mb-4 border-b-2 border-mukesa-red pb-2">Event Agenda</h2>
+              <h2 className="text-2xl font-bold text-mukesa-blue dark:text-black mt-10 mb-4 border-b-2 border-mukesa-red pb-2">Event Agenda</h2>
               <ul className="space-y-4">
                 {event.agenda.map(item => (
-                  <li key={item.time} className="flex flex-col sm:flex-row p-4 bg-gray-50 dark:bg-mukesa-black rounded-lg shadow-sm">
-                    <div className="font-bold text-mukesa-blue w-full sm:w-40 mb-2 sm:mb-0 flex-shrink-0">{item.time}</div>
+                  <li key={item.time} className="flex flex-col sm:flex-row p-4 bg-gray-50 dark:bg-mukesa-black rounded-lg shadow-sm text-gray-800 dark:text-black">
+                    <div className="font-bold text-mukesa-blue dark:text-mukesa-blue w-full sm:w-40 mb-2 sm:mb-0 flex-shrink-0">{item.time}</div>
                     <div className="flex-grow">
-                      <p className="font-semibold text-gray-800 dark:text-white">
+                      <p>
                         {item.topic}
                         {item.speaker && (
-                          <span className="block text-sm font-normal text-gray-600 dark:text-mukesa-gray-text">
+                          <span className="block text-sm font-normal text-gray-600 dark:text-mukesa-black-text">
                             with {item.speaker}
                           </span>
                         )}
