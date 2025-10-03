@@ -69,7 +69,7 @@ sponsors: [
       { name: 'Kenya Urban Roads Authority (KURA)', logoUrl: '/images/KURA.png' },
       { name: 'Institution of Engineers of Kenya (IEK)', logoUrl: '/images/IEK.png' },
       { name: 'IEK-FL', logoUrl: '/images/IEK FL.png' },
-      { name: 'ACEK FL', logoUrl: '/images/ACEK FL.png' },
+      { name: 'ACEK FL', logoUrl: '/images/future leaders kenya.png' },
       { name: 'ACES KU', logoUrl: '/images/ACES KU.png' },
       { name: 'CSA TUK', logoUrl: '/images/CSA.png' },
       { name: 'ACES UON', logoUrl: '/images/ACES UON.jpg' },
