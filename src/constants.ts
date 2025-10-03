@@ -107,7 +107,18 @@ sponsors: [
     type: EventType.PAST,
   sponsors: [
       { name: 'IEEE MMU Student Branch', logoUrl: '/images/MMUK SB LOGO NL.png' },
-      { name: 'MUKESA', logoUrl: '/images/MUKESA_LOGO.png' }
+      { name: 'MUKESA', logoUrl: '/images/MUKESA_LOGO.png' },
+      { name: 'The Lads', logoUrl: '/images/The Lads.png' },
+      { name: 'Innovate-Her', logoUrl: '/images/Innovate-Her.png' },
+      { name: 'AWIT', logoUrl: '/images/AWIT.png' },
+      { name: 'maabara bunifu', logoUrl: '/images/maabara bunifu.png' },
+      { name: 'Microsoft', logoUrl: '/images/microsoft.png' },
+      { name: 'REREC', logoUrl: '/images/REREC.png' },
+      { name: 'Safaricom', logoUrl: '/images/safaricom.png' },
+      { name: 'Google', logoUrl: '/images/google.png' },
+      { name: 'Geek SSters', logoUrl: '/images/geek ssters.png' },
+      { name: 'sanasana', logoUrl: '/images/sanasana.png' },
+      { name: 'Zindua School', logoUrl: '/images/Zindua school.png' },
     ],
     registrationLink: '#'
   },
