@@ -1,3 +1,5 @@
+// Fix: Import ElementType from React to resolve type error.
+import type { ElementType } from 'react';
 
 export interface NavLinkItem {
   name: string;
@@ -72,6 +74,7 @@ export interface AchievementItem {
   date: string;
   imageUrl?: string;
   achievedBy: string;
+  detailsLink?: string; // Added this line
 }
 
 export interface ExternalLink {
@@ -79,7 +82,8 @@ export interface ExternalLink {
     name: string;
     url: string;
     description?: string;
-    icon?: React.ElementType;
+    // Fix: Use ElementType directly instead of React.ElementType
+    icon?: ElementType;
 }
 
 export interface MerchItem {
