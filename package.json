@@ -10,14 +10,16 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "axios": "^1.12.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.18.8",
     "@types/react-dom": "^19.1.5",
     "@types/react-router-dom": "^5.3.3",
+    "@vercel/node": "^5.3.24",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   }
