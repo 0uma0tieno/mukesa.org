@@ -31,7 +31,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // 3. Make STK Push
     const stkResponse = await axios.post(
-      `${DARAJA_BASE_URL}/mpesa/stkpush/v1/processrequest`,
+      `${DARAJA_BASE_URL}/api/mpesa/stkpush/v1/processrequest`,
       {
         BusinessShortCode: process.env.DARAJA_SHORTCODE,
         Password: password,
