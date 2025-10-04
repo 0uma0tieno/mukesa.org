@@ -42,13 +42,40 @@ const PicnicPaymentPage: React.FC = () => {
     setIsModalOpen(true);
   };
 
-  const handlePayment = () => {
-    setPaymentStep('processing');
-    setTimeout(() => {
-      setPaymentStep('success');
-    }, 3000); // Simulate processing time
-  };
+  const handlePayment = async () => {
+  setPaymentStep('processing');
   
+      try {
+        const response = await fetch("https://mukesa.vercel.app/mpesa/stkpush", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+        amount: totalAmount,
+        phoneNumber: formData.phoneNumber,
+        fullName: formData.fullName,
+        email: formData.email,
+        eventTitle: EVENT_TITLE,
+        tickets,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.ResponseCode === "0") {
+      // STK push initiated successfully
+      setPaymentStep("success");
+      } else {
+      alert(`Payment initiation failed: ${data.errorMessage || "Try again"}`);
+      setPaymentStep("details");
+      }
+
+  } catch (err) {
+    console.error(err);
+    alert("Error connecting to payment server. Check console.");
+    setPaymentStep("details");
+  }
+};
+
   const closeModalAndReset = () => {
     setIsModalOpen(false);
     setFormData({ fullName: '', email: '', studentId: '', phoneNumber: '' });
