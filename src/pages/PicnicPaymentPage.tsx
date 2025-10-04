@@ -46,7 +46,7 @@ const PicnicPaymentPage: React.FC = () => {
   setPaymentStep('processing');
   
       try {
-        const response = await fetch("https://mukesa.vercel.app/api/mpesa/stkpush", {
+        const response = await fetch("/api/mpesa-stkpush", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -177,7 +177,7 @@ const PicnicPaymentPage: React.FC = () => {
             </Button>
            </div>
         )}
-      </Modal>
+      </Modal> 
     </SectionWrapper>
   );
 };
