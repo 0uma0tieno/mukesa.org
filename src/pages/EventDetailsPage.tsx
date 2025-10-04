@@ -31,6 +31,8 @@ const EventDetailsPage: React.FC = () => {
     );
   }
 
+  const isInternalLink = event.registrationLink && event.registrationLink.startsWith('/');
+
   // If the event is found, render its details.
   return (
     <SectionWrapper>
@@ -82,9 +84,17 @@ const EventDetailsPage: React.FC = () => {
 
           {event.registrationLink && (
             <div className="my-8 text-center">
-              <Button variant="primary" size="lg" onClick={() => window.open(event.registrationLink, '_blank')} className="shadow-lg">
-                <TicketIcon className="h-6 w-6 mr-2 inline" /> Register for this Event
-              </Button>
+              {isInternalLink ? (
+                <Link to={event.registrationLink}>
+                  <Button variant="primary" size="lg" className="shadow-lg">
+                    <TicketIcon className="h-6 w-6 mr-2 inline" /> Register for this Event
+                  </Button>
+                </Link>
+              ) : (
+                <Button variant="primary" size="lg" onClick={() => window.open(event.registrationLink, '_blank', 'noopener,noreferrer')} className="shadow-lg">
+                  <TicketIcon className="h-6 w-6 mr-2 inline" /> Register for this Event
+                </Button>
+              )}
             </div>
           )}
           
@@ -100,7 +110,7 @@ const EventDetailsPage: React.FC = () => {
                 {event.speakers.map(speaker => (
                   <div key={speaker.name} className="text-center bg-gray-50 dark:bg-mukesa-black p-4 rounded-lg shadow-md">
                     <img src={speaker.imageUrl || `https://i.pravatar.cc/150?u=${speaker.name}`} alt={speaker.name} className="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-4 border-mukesa-blue" />
-                    <h3 className="font-semibold text-lg text-gray-800 dark:text-black">{speaker.name}</h3>
+                    <h3 className="font-semibold text-lg text-gray-800 dark:text-white">{speaker.name}</h3>
                     <p className="text-sm text-mukesa-red">{speaker.title}</p>
                   </div>
                 ))}
@@ -113,13 +123,13 @@ const EventDetailsPage: React.FC = () => {
               <h2 className="text-2xl font-bold text-mukesa-blue dark:text-black mt-10 mb-4 border-b-2 border-mukesa-red pb-2">Event Agenda</h2>
               <ul className="space-y-4">
                 {event.agenda.map(item => (
-                  <li key={item.time} className="flex flex-col sm:flex-row p-4 bg-gray-50 dark:bg-mukesa-black rounded-lg shadow-sm text-gray-800 dark:text-black">
+                  <li key={item.time} className="flex flex-col sm:flex-row p-4 bg-gray-50 dark:bg-mukesa-black rounded-lg shadow-sm text-black dark:text-black">
                     <div className="font-bold text-mukesa-blue dark:text-mukesa-blue w-full sm:w-40 mb-2 sm:mb-0 flex-shrink-0">{item.time}</div>
                     <div className="flex-grow">
                       <p>
                         {item.topic}
                         {item.speaker && (
-                          <span className="block text-sm font-normal text-gray-600 dark:text-mukesa-black-text">
+                          <span className="block text-sm font-normal text-gray-600 dark:text-mukesa-gray-text">
                             with {item.speaker}
                           </span>
                         )}
@@ -150,7 +160,6 @@ const EventDetailsPage: React.FC = () => {
           )}
         </div>
       </div>
-      
     </SectionWrapper>
   );
 };

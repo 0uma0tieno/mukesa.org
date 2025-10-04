@@ -30,7 +30,7 @@ export const MOCK_EVENTS: EventItem[] = [
       { name: 'IEEE MMU Student Branch', logoUrl: '/images/MMUK SB LOGO NL.png' },
       { name: 'MUKESA', logoUrl: '/images/MUKESA_LOGO.png' }
     ],
-    registrationLink: '#'
+    registrationLink: '/events/payment/picnic'
   },
 
   {
