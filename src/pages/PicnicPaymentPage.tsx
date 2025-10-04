@@ -58,7 +58,7 @@ const PicnicPaymentPage: React.FC = () => {
 
   const inputBaseClasses = "w-full p-3 border rounded-lg focus:ring-2 focus:ring-mukesa-blue focus:border-mukesa-blue transition-colors duration-200";
   const lightInputClasses = "bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-400";
-  const darkInputClasses = "dark:bg-mukesa-black dark:border-mukesa-gray-dark dark:text-white dark:placeholder-gray-500 dark:focus:border-mukesa-blue";
+  const darkInputClasses = "dark:bg-mukesa-black dark:border-mukesa-gray-dark dark:text-black dark:placeholder-gray-500 dark:focus:border-mukesa-blue";
   const labelBaseClasses = "block text-sm font-medium mb-1 text-gray-700 dark:text-mukesa-gray-text";
 
   return (
@@ -68,7 +68,7 @@ const PicnicPaymentPage: React.FC = () => {
             {/* Left Column: Event Details */}
             <div className="space-y-6">
                 <img src="https://picsum.photos/seed/event7/600/400" alt="Picnic at Ololua Nature Trail" className="rounded-lg shadow-lg w-full h-48 object-cover" />
-                <h2 className="text-3xl font-bold text-mukesa-blue dark:text-white">{EVENT_TITLE}</h2>
+                <h2 className="text-3xl font-bold text-mukesa-blue dark:text-black">{EVENT_TITLE}</h2>
                 <div className="space-y-3 text-lg text-gray-700 dark:text-mukesa-gray-text">
                     <p className="flex items-center"><CalendarDaysIcon className="h-6 w-6 mr-3 text-mukesa-red"/> {EVENT_DATE}</p>
                     <p className="flex items-center"><MapPinIcon className="h-6 w-6 mr-3 text-mukesa-red"/> {EVENT_LOCATION}</p>
@@ -83,7 +83,7 @@ const PicnicPaymentPage: React.FC = () => {
 
             {/* Right Column: Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-white border-b-2 border-mukesa-red pb-2">Your Details</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-black border-b-2 border-mukesa-red pb-2">Your Details</h3>
                 <div>
                     <label htmlFor="fullName" className={labelBaseClasses}><UserIcon className="h-4 w-4 inline mr-1"/> Full Name</label>
                     <input type="text" name="fullName" id="fullName" value={formData.fullName} onChange={handleChange} required className={`${inputBaseClasses} ${lightInputClasses} ${darkInputClasses}`}/>
@@ -102,7 +102,7 @@ const PicnicPaymentPage: React.FC = () => {
                 </div>
                 <div className="p-4 bg-gray-100 dark:bg-mukesa-black rounded-lg text-center">
                     <p className="text-lg font-medium text-gray-600 dark:text-mukesa-gray-text">Total Amount</p>
-                    <p className="text-3xl font-bold text-mukesa-blue dark:text-white">KES {totalAmount}</p>
+                    <p className="text-3xl font-bold text-mukesa-blue dark:text-black">KES {totalAmount}</p>
                 </div>
                 <Button type="submit" variant="primary" size="lg" className="w-full">
                     Proceed to Payment
@@ -114,7 +114,7 @@ const PicnicPaymentPage: React.FC = () => {
       <Modal isOpen={isModalOpen} onClose={closeModalAndReset} title="Confirm & Pay">
         {paymentStep === 'details' && (
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-gray-800 dark:text-white">Order Summary</h4>
+            <h4 className="font-semibold text-lg text-gray-800 dark:text-black">Order Summary</h4>
             <div className="p-4 bg-gray-50 dark:bg-mukesa-black rounded-lg space-y-2">
               <p><strong>Event:</strong> {EVENT_TITLE}</p>
               <p><strong>Tickets:</strong> {tickets}</p>
@@ -142,7 +142,7 @@ const PicnicPaymentPage: React.FC = () => {
         {paymentStep === 'success' && (
            <div className="text-center py-8">
             <CheckCircleIcon className="h-16 w-16 text-green-500 mx-auto mb-4"/>
-            <h3 className="text-2xl font-semibold text-mukesa-blue dark:text-white mb-3">Success!</h3>
+            <h3 className="text-2xl font-semibold text-mukesa-blue dark:text-black mb-3">Success!</h3>
             <p className="text-gray-700 dark:text-mukesa-gray-text mb-6">Your spot is reserved! We have sent a confirmation to {formData.email}. Please ensure you complete the M-Pesa payment if you haven't already.</p>
             <p className="text-sm text-gray-500 dark:text-gray-400">Paybill: <strong>{MPESA_PAYBILL}</strong>, Account: <strong>{MPESA_ACCOUNT_NUMBER}</strong></p>
             <Button onClick={closeModalAndReset} variant="secondary" size="lg" className="w-full mt-6">
