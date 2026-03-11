@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SectionWrapper from '../components/SectionWrapper';
-import { MOCK_EVENTS } from '../constants'; // Use MOCK_EVENTS
+import { MOCK_EVENTS } from '../constants'; 
 import { EventItem, EventType } from '../types';
 import { CalendarDaysIcon, CheckCircleIcon, ClockIcon, InformationCircleIcon } from '@heroicons/react/24/outline';
 import Button from '../components/Button';
@@ -54,7 +54,7 @@ const EventCard: React.FC<{ event: EventItem }> = ({ event }) => {
 
 const EventsPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<EventType>(EventType.UPCOMING);
-  // Reverted to MOCK_EVENTS to ensure the page works, bypassing potential API/backend issues.
+  
   const events = MOCK_EVENTS; 
 
   const filteredEvents = events.filter(event => event.type === activeTab);

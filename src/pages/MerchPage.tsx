@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import SectionWrapper from '../components/SectionWrapper';
 import { MOCK_MERCH_ITEMS } from '../constants';
-// import MERCH_CONTACT_EMAIL from '../constants'; // Uncomment and adjust if you add the export in constants.ts
-const MERCH_CONTACT_EMAIL = "mukesa1819@gmail.com"; // Replace with the correct email or import if available
+const MERCH_CONTACT_EMAIL = "mukesa1819@gmail.com"; 
 import { MerchItem } from '../types';
 import { ShoppingCartIcon, TagIcon, EnvelopeIcon, InformationCircleIcon } from '@heroicons/react/24/outline';
 import Button from '../components/Button';

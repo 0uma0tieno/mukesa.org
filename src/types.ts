@@ -1,4 +1,4 @@
-// Fix: Import ElementType from React to resolve type error.
+
 import type { ElementType } from 'react';
 
 export interface NavLinkItem {
@@ -26,7 +26,7 @@ export interface AgendaItem {
 
 export interface Sponsor {
   name: string;
-  logoUrl: string; // URL to the sponsor's logo
+  logoUrl: string; 
 }
 
 export interface EventItem {
@@ -36,8 +36,8 @@ export interface EventItem {
   time?: string;
   location?: string;
   description: string;
-  imageUrl?: string; // For event cards
-  bannerImageUrl?: string; // For event details page header
+  imageUrl?: string; 
+  bannerImageUrl?: string; 
   type: EventType;
   speakers?: Speaker[];
   agenda?: AgendaItem[];
@@ -80,7 +80,7 @@ export interface AchievementItem {
   date: string;
   imageUrl?: string;
   achievedBy: string;
-  detailsLink?: string; // Added this line
+  detailsLink?: string; 
 }
 
 export interface ExternalLink {
@@ -88,7 +88,6 @@ export interface ExternalLink {
     name: string;
     url: string;
     description?: string;
-    // Fix: Use ElementType directly instead of React.ElementType
     icon?: ElementType;
 }
 
@@ -96,8 +95,8 @@ export interface MerchItem {
   id: string;
   name: string;
   description: string;
-  price: string; // e.g., "KES 1500"
+  price: string; 
   imageUrl?: string;
   category: 'Apparel' | 'Accessories' | 'Stationery';
-  // Optional: sizes?: string[]; colors?: string[];
+
 }

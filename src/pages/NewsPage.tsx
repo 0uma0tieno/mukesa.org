@@ -1,7 +1,7 @@
 
 import React from 'react';
 import SectionWrapper from '../components/SectionWrapper';
-import { useContent } from '../contexts/ContentContext'; // Import useContent to get live data
+import { useContent } from '../contexts/ContentContext'; 
 import { NewsArticle } from '../types';
 import { NewspaperIcon, CalendarDaysIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import Button from '../components/Button';
@@ -37,7 +37,7 @@ const NewsArticleCard: React.FC<{ article: NewsArticle }> = ({ article }) => {
 };
 
 const NewsPage: React.FC = () => {
-  // Get news articles from the context instead of static constants
+  
   const { news } = useContent();
 
   return (

@@ -48,7 +48,7 @@ const PicnicPaymentPage: React.FC = () => {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
-          phone: formData.phoneNumber, // aligned with backend
+          phone: formData.phoneNumber, 
           amount: totalAmount,
         }),
       });

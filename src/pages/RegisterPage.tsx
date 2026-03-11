@@ -44,7 +44,7 @@ const RegisterPage: React.FC = () => {
 
   const inputBaseClasses = "w-full p-3 border rounded-lg focus:ring-2 focus:ring-mukesa-blue focus:border-mukesa-blue transition-colors duration-200";
   const lightInputClasses = "bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-400";
-  // Dark input classes ensure proper contrast and feel for dark mode
+ 
   const darkInputClasses = "dark:bg-mukesa-black dark:border-mukesa-gray-dark dark:text-white dark:placeholder-gray-500 dark:focus:border-mukesa-blue";
   
   const labelBaseClasses = "block text-sm font-medium mb-1 text-gray-700 dark:text-mukesa-gray-text";
@@ -120,7 +120,7 @@ const RegisterPage: React.FC = () => {
       </div>
 
       <Modal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} title="Mpesa Payment Instructions">
-        {/* Modal's children div inherits text color from Modal component (dark:text-mukesa-gray-text) */}
+        
         <div className="space-y-4"> 
           <p>To complete your MUKESA membership registration, please pay the fee of <strong className="text-mukesa-red">{MEMBERSHIP_FEE}</strong> via Mpesa:</p>
           <ol className="list-decimal list-inside space-y-2 bg-gray-100 dark:bg-mukesa-black p-4 rounded-lg">

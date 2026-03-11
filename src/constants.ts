@@ -1,5 +1,5 @@
 import { NavLinkItem, EventItem, EventType, ProjectItem, MemberItem, NewsArticle, AchievementItem, ExternalLink, MerchItem } from './types';
-import { AcademicCapIcon, BeakerIcon,  TrophyIcon, BriefcaseIcon } from '@heroicons/react/24/outline'; // Using heroicons for variety
+import { AcademicCapIcon, BeakerIcon,  TrophyIcon, BriefcaseIcon } from '@heroicons/react/24/outline'; 
 
 export const NAVIGATION_LINKS: NavLinkItem[] = [
   { name: 'Home', path: '/' },
@@ -7,7 +7,6 @@ export const NAVIGATION_LINKS: NavLinkItem[] = [
   { name: 'Events', path: '/events' },
   { name: 'Achievements', path: '/achievements' },
   { name: 'Projects & Papers', path: '/projects' },
-  //{ name: 'News & Trends', path: '/news' },
   { name: 'Our Team', path: '/team' },
   { name: 'Merch', path: '/merch' }, 
   { name: 'Join Us', path: '/register' },

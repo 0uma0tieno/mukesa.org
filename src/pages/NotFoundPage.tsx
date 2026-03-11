@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../components/Button'; // Adjusted path
+import Button from '../components/Button'; 
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
 const NotFoundPage: React.FC = () => {

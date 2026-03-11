@@ -1,10 +1,10 @@
 
 import React from 'react';
-import SectionWrapper from '../components/SectionWrapper'; // Adjusted path
-import { MOCK_PROJECTS } from '../constants'; // Adjusted path
-import { ProjectItem } from '../types'; // Adjusted path
+import SectionWrapper from '../components/SectionWrapper'; 
+import { MOCK_PROJECTS } from '../constants'; 
+import { ProjectItem } from '../types'; 
 import { CodeBracketIcon, UsersIcon, DocumentTextIcon, LightBulbIcon } from '@heroicons/react/24/outline';
-import Button from '../components/Button'; // Adjusted path
+import Button from '../components/Button'; 
 
 const ProjectCard: React.FC<{ project: ProjectItem }> = ({ project }) => {
   return (
@@ -73,7 +73,7 @@ const ProjectsPage: React.FC = () => {
         </p>
       )}
        <div className="mt-12 text-center">
-        <p className="text-mukesa-text-muted">Have a project to showcase? <a href="mailto:projects@mukesa.example.com" className="text-mukesa-red hover:underline">Submit your project!</a></p>
+        <p className="text-mukesa-text-muted">Have a project to showcase? <a href="mailto:mukesa1819@gmail.com" className="text-mukesa-red hover:underline">Submit your project!</a></p>
       </div>
     </SectionWrapper>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { MOCK_EVENTS } from '../constants'; // Use MOCK_EVENTS
+import { MOCK_EVENTS } from '../constants'; 
 import SectionWrapper from '../components/SectionWrapper';
 import { EventItem } from '../types';
 import { CalendarDaysIcon, ArrowLeftIcon, MapPinIcon, ClockIcon, TicketIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline';
@@ -8,10 +8,10 @@ import Button from '../components/Button';
 
 const EventDetailsPage: React.FC = () => {
   const { eventId } = useParams<{ eventId: string }>();
-  // Reverted to MOCK_EVENTS to find the specific event, ensuring the page works.
+ 
   const event = MOCK_EVENTS.find((e: EventItem) => e.id === eventId);
 
-  // If no event is found with the given ID, show a user-friendly "not found" message.
+  
   if (!event) {
     return (
         <SectionWrapper title="Event Not Found">
@@ -33,7 +33,7 @@ const EventDetailsPage: React.FC = () => {
 
   const isInternalLink = event.registrationLink && event.registrationLink.startsWith('/');
 
-  // If the event is found, render its details.
+  
   return (
     <SectionWrapper>
       <div className="max-w-4xl mx-auto">

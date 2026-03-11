@@ -1,8 +1,8 @@
 
 import React from 'react';
-import SectionWrapper from '../components/SectionWrapper'; // Adjusted path
-import { EXTERNAL_LINKS_DATA } from '../constants'; // Adjusted path
-import { ExternalLink } from '../types'; // Adjusted path
+import SectionWrapper from '../components/SectionWrapper'; 
+import { EXTERNAL_LINKS_DATA } from '../constants'; 
+import { ExternalLink } from '../types'; 
 import { ArrowTopRightOnSquareIcon, LinkIcon } from '@heroicons/react/24/outline';
 
 const LinkCard: React.FC<{ link: ExternalLink }> = ({ link }) => {

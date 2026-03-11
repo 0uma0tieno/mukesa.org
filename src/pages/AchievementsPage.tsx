@@ -1,8 +1,8 @@
 
 import React from 'react';
-import SectionWrapper from '../components/SectionWrapper'; // Adjusted path
-import { MOCK_ACHIEVEMENTS } from '../constants'; // Adjusted path
-import { AchievementItem } from '../types'; // Adjusted path
+import SectionWrapper from '../components/SectionWrapper'; 
+import { MOCK_ACHIEVEMENTS } from '../constants'; 
+import { AchievementItem } from '../types'; 
 import { TrophyIcon, UserCircleIcon, CalendarDaysIcon } from '@heroicons/react/24/outline';
 
 const AchievementCard: React.FC<{ achievement: AchievementItem }> = ({ achievement }) => {
@@ -25,7 +25,7 @@ const AchievementCard: React.FC<{ achievement: AchievementItem }> = ({ achieveme
           <span>{achievement.date}</span>
         </div>
         <p className="text-mukesa-text-muted text-base mb-4 flex-grow line-clamp-4">{achievement.description}</p>
-        {/* Could add a 'Read More' if there are more details */}
+        
       </div>
     </div>
   );

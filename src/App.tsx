@@ -15,7 +15,7 @@ import LinksPage from './pages/LinksPage';
 import MerchPage from './pages/MerchPage';
 import NotFoundPage from './pages/NotFoundPage';
 import EventDetailsPage from './pages/EventDetailsPage';
-import PicnicPaymentPage from './pages/PicnicPaymentPage'; // Import the new page
+import PicnicPaymentPage from './pages/PicnicPaymentPage'; 
 import { ThemeProvider } from './contexts/ThemeContext';
 import { ContentProvider, useContent } from './contexts/ContentContext';
 

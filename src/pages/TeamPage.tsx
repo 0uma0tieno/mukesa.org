@@ -1,8 +1,8 @@
 
 import React from 'react';
-import SectionWrapper from '../components/SectionWrapper'; // Adjusted path
-import { MOCK_MEMBERS } from '../constants'; // Adjusted path
-import { MemberItem } from '../types'; // Adjusted path
+import SectionWrapper from '../components/SectionWrapper'; 
+import { MOCK_MEMBERS } from '../constants'; 
+import { MemberItem } from '../types'; 
 
 const MemberCard: React.FC<{ member: MemberItem }> = ({ member }) => {
   return (

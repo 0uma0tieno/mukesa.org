@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import SectionWrapper from '../components/SectionWrapper'; // Adjusted path
-import Button from '../components/Button'; // Adjusted path
-import { MOCK_EVENTS, MOCK_NEWS, MOCK_PROJECTS } from '../constants'; // Adjusted path
-import { EventItem, NewsArticle, ProjectItem } from '../types'; // Adjusted path
 import { ArrowRightIcon, CalendarDaysIcon, NewspaperIcon, LightBulbIcon, AcademicCapIcon, UsersIcon } from '@heroicons/react/24/outline';
+import Button from '../components/Button';
+import { Link } from 'react-router-dom';
+import SectionWrapper from '../components/SectionWrapper';
+import { MOCK_EVENTS, MOCK_PROJECTS } from '../constants';
+import { EventItem, NewsArticle, ProjectItem } from '../types';
 
 const HeroSection: React.FC = () => (
   <div className="relative bg-mukesa-bg-alt py-20 md:py-32 text-white rounded-lg shadow-2xl overflow-hidden mb-16">
@@ -12,12 +12,12 @@ const HeroSection: React.FC = () => (
       className="absolute inset-0 bg-cover bg-center opacity-60" 
       style={{ backgroundImage: 'url("/images/multimedia.png")' }}
     ></div>
-    <div className="absolute inset-0 bg-gradient-to-br from-mukesa-blue/70 via-mukesa-text/80 to-mukesa-red/50"></div> {/* Using mukesa-text for a dark overlay component */}
+    <div className="absolute inset-0 bg-gradient-to-br from-mukesa-blue/70 via-mukesa-text/80 to-mukesa-red/50"></div> 
     <div className="container mx-auto px-6 text-center relative z-10">
       <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
          Welcome to <span className="text-mukesa-blue" style={{ textShadow: '-1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF, -0.5px -0.5px 0 #FFF, 0.5px -0.5px 0 #FFF, -0.5px 0.5px 0 #FFF, 0.5px 0.5px 0 #FFF' }}>MUKESA</span>
       </h1>
-      <p className="text-lg md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto"> {/* Adjusted for better readability on gradient */}
+      <p className="text-lg md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto"> 
         Empowering the next generation of engineers at Multimedia University of Kenya. Discover, Innovate, Lead.
       </p>
       <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -92,18 +92,7 @@ const HomePage: React.FC = () => {
         </SectionWrapper>
       )}
 
-      {/* {latestNews.length > 0 && (
-         <SectionWrapper title="Latest News & Trends" subtitle="Stay updated with the latest in the world of engineering.">
-         <div className="grid md:grid-cols-2 gap-8">
-           {latestNews.map(news => <MiniCard key={news.id} item={news} type="news" />)}
-         </div>
-         <div className="text-center mt-8">
-           <Button variant="primary" onClick={() => window.location.hash = '/news'}>
-             Read More News <ArrowRightIcon className="h-5 w-5 inline ml-2" />
-           </Button>
-         </div>
-       </SectionWrapper>
-      )} */}
+      
 
       {featuredProject && (
         <SectionWrapper title="Featured Project" subtitle="Check out innovative work from our talented students.">

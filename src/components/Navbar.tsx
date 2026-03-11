@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { NAVIGATION_LINKS } from '../constants'; // Adjusted path if constants.ts is in src
+import { NAVIGATION_LINKS } from '../constants'; 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 //  Logo
@@ -9,10 +9,10 @@ const MukesaLogo: React.FC = () => (
     <img 
       src="/images/mukesa logo.png"
       alt="MUKESA Logo"
-      className="mr-2 h-16 w-auto" // Reduced height from h-10 to h-8
+      className="mr-2 h-16 w-auto" 
     />
     <div>
-      <span className="text-lg font-bold text-mukesa-blue leading-none">MUKESA</span> {/* Reduced from text-2xl to text-lg */}
+      <span className="text-lg font-bold text-mukesa-blue leading-none">MUKESA</span>
       <p className="text-[10px] text-mukesa-text-muted leading-tight">
         Multimedia University of Kenya<br/>Engineering Students' Association
       </p>

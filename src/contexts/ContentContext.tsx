@@ -3,7 +3,7 @@ import React, { createContext, useState, useContext, ReactNode } from 'react';
 import { EventItem, NewsArticle, ProjectItem, AchievementItem, MemberItem, MerchItem, ExternalLink } from '../types';
 import { MOCK_EVENTS, MOCK_NEWS, MOCK_PROJECTS, MOCK_ACHIEVEMENTS, MOCK_MEMBERS, MOCK_MERCH_ITEMS, EXTERNAL_LINKS_DATA } from '../constants';
 
-// --- Type definitions for the context ---
+
 interface ContentContextType {
   events: EventItem[];
   updateEvents: (data: EventItem[]) => void;
@@ -21,7 +21,7 @@ interface ContentContextType {
   updateLinks: (data: ExternalLink[]) => void;
 }
 
-// --- Helper Functions for localStorage ---
+
 
 /**
  * Retrieves an item from localStorage. If it doesn't exist or there's an error,
@@ -59,7 +59,7 @@ const ContentContext = createContext<ContentContextType | undefined>(undefined);
 // --- Provider Component ---
 export const ContentProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     // Initialize state for each content type, trying to load from localStorage first,
-    // and falling back to the MOCK data from constants.ts.
+    // and falling back to thedata  from constants.ts.
     const [events, setEvents] = useState<EventItem[]>(() => getInitialState('mukesa-events', MOCK_EVENTS));
     const [news, setNews] = useState<NewsArticle[]>(() => getInitialState('mukesa-news', MOCK_NEWS));
     const [projects, setProjects] = useState<ProjectItem[]>(() => getInitialState('mukesa-projects', MOCK_PROJECTS));
